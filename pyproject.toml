@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "langchain-geekflare"
+version = "0.1.0"
+description = "LangChain tools for Geekflare: web search, scraping, screenshots, PDFs, brand data, and website diagnostics."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Geekflare", email = "support@geekflare.com" }]
+requires-python = ">=3.10"
+keywords = ["langchain", "geekflare", "web search", "scraping", "screenshot", "dns", "tools"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+  "langchain-core>=0.3.0,<2.0.0",
+  "geekflare-api>=0.3.2",
+]
+
+[project.urls]
+Homepage = "https://geekflare.com/api/"
+Documentation = "https://docs.geekflare.com"
+Repository = "https://github.com/geekflare/langchain-geekflare"
+Issues = "https://github.com/geekflare/langchain-geekflare/issues"
+
+[dependency-groups]
+test = [
+  "pytest>=8",
+  "pytest-asyncio>=0.23",
+  "pytest-socket>=0.7",
+  "langchain-tests>=0.3.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["langchain_geekflare"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+markers = ["compile: placeholder test that only imports the package"]
