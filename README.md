@@ -1,6 +1,6 @@
 # langchain-geekflare
 
-LangChain tools for the [Geekflare API](https://geekflare.com/api/): live web search (including full Google SERP results), scraping public pages to Markdown or structured JSON, page metadata, brand data, screenshots, URL-to-PDF, and website diagnostics (uptime, DNS, DNSSEC, TLS, redirects, broken links, load time, mixed content, Lighthouse).
+LangChain tools for the [Geekflare API](https://geekflare.com): live web search (including full Google SERP results), scraping public pages to Markdown or structured JSON, page metadata, brand data, screenshots, URL-to-PDF, and website diagnostics (uptime, DNS, DNSSEC, TLS, redirects, broken links, load time, mixed content, Lighthouse).
 
 Built on the official Python SDK, [`geekflare-api`](https://pypi.org/project/geekflare-api/).
 
@@ -89,7 +89,7 @@ Async is supported on every tool: `await tool.ainvoke({...})`.
 
 ## Notes
 
-- Every call spends Geekflare credits on your account; see [pricing](https://geekflare.com/api/pricing/).
+- Every call spends Geekflare credits on your account; see [pricing](https://geekflare.com/pricing/).
 - Use the tools for publicly accessible pages only.
 - The tools send the URLs, queries, and options you pass to `api.geekflare.com`. See the [Geekflare privacy policy](https://geekflare.com/privacy/).
 

@@ -23,7 +23,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://geekflare.com/api/"
+Homepage = "https://geekflare.com"
 Documentation = "https://docs.geekflare.com"
 Repository = "https://github.com/geekflare/langchain-geekflare"
 Issues = "https://github.com/geekflare/langchain-geekflare/issues"
